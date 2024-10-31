@@ -5,34 +5,110 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fruit de Mer - Personnages</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
     <div id="parent">
         <header>
-            <h1>Plongez dans l’aventure aquatique de Fruit de Mer !</h1>
-            <button>Télécharger le jeu</button>
+            <div class="header-content">
+                <img src="images/logo.png" alt="Logo Fruit de Mer" class="logo">
+                <div class="header-text">
+                    <h1>Les Personnages de Fruit de Mer</h1>
+                    <p class="tagline">Découvrez les habitants des profondeurs</p>
+                </div>
+                <div class="cta-buttons">
+                    <button class="download-btn primary">Télécharger le jeu</button>
+                    <button class="demo-btn secondary">Essayer la démo</button>
+                </div>
+            </div>
         </header>
-        <nav>
+
+        <nav class="main-nav">
             <ul>
-                <li><a href="index.html">L’Univers</a></li>
-                <li><a href="personnages.html">Personnages</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="index.html"><i class="fas fa-water"></i> L'Univers</a></li>
+                <li><a href="personnages.html" class="active"><i class="fas fa-users"></i> Personnages</a></li>
+                <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
             </ul>
         </nav>
+
         <aside>
-            <ul>
-                <li>Les Explorateurs</li>
-                <li>Les Habitants des Profondeurs</li>
-                <li>Les Créatures Mystiques</li>
-            </ul>
+            <nav class="side-nav">
+                <h3><i class="fas fa-compass"></i> Catégories</h3>
+                <ul>
+                    <li><a href="#explorateurs"><i class="fas fa-ship"></i> Les Explorateurs</a></li>
+                    <li><a href="#habitants"><i class="fas fa-home"></i> Les Habitants</a></li>
+                    <li><a href="#creatures"><i class="fas fa-dragon"></i> Les Créatures</a></li>
+                </ul>
+            </nav>
         </aside>
+
         <main>
-            <h2>Les personnages de Fruit de Mer</h2>
-            <p>Découvrez les différents groupes de personnages qui peuplent cet univers fascinant...</p>
+            <section id="explorateurs" class="content-section">
+                <h2><i class="fas fa-ship"></i> Les Explorateurs</h2>
+                <div class="section-content">
+                    <div class="character-card">
+                        <img src="images/explorateur1.jpg" alt="Capitaine des mers" class="section-image">
+                        <h3>Le Capitaine des Mers</h3>
+                        <p>Chef intrépide guidant son équipage à travers les courants...</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="habitants" class="content-section">
+                <h2><i class="fas fa-home"></i> Les Habitants des Profondeurs</h2>
+                <div class="section-content">
+                    <div class="character-card">
+                        <img src="images/habitant1.jpg" alt="Gardien des récifs" class="section-image">
+                        <h3>Le Gardien des Récifs</h3>
+                        <p>Protecteur des cités coralliennes et de leurs habitants...</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="creatures" class="content-section">
+                <h2><i class="fas fa-dragon"></i> Les Créatures Mystiques</h2>
+                <div class="section-content">
+                    <div class="character-card">
+                        <img src="images/creature1.jpg" alt="Le Léviathan" class="section-image">
+                        <h3>Le Léviathan</h3>
+                        <p>Créature légendaire des abysses, gardienne des secrets anciens...</p>
+                    </div>
+                </div>
+            </section>
         </main>
+
         <footer>
-            <p>&copy; 2024 Fruit de Mer | Tous droits réservés</p>
-            <p>Suivez-nous sur les réseaux sociaux</p>
+            <div class="footer-content">
+                <div class="social-links">
+                    <h4><i class="fas fa-share-alt"></i> Suivez-nous</h4>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-discord"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="credits">
+                    <p>&copy; 2024 Fruit de Mer | Tous droits réservés</p>
+                    <p>Développé avec <i class="fas fa-heart"></i> par l'équipe Fruit de Mer</p>
+                </div>
+                <div class="sitemap">
+                    <h4><i class="fas fa-sitemap"></i> Plan du site</h4>
+                    <ul>
+                        <li><a href="index.html">L'Univers</a></li>
+                        <li><a href="personnages.html">Personnages</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="mentions-legales.html">Mentions légales</a></li>
+                    </ul>
+                </div>
+                <div class="newsletter">
+                    <h4><i class="fas fa-envelope"></i> Newsletter</h4>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Votre email">
+                        <button type="submit">S'abonner</button>
+                    </form>
+                </div>
+            </div>
         </footer>
     </div>
 </body>
